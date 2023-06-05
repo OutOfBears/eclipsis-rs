@@ -1,0 +1,4 @@
+/target/
+**/*.rs.bk
+.openapi-generator/
+Cargo.lock

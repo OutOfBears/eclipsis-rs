@@ -1,0 +1,7 @@
+additionalProperties:
+  packageName: eclipsis-rs
+  library: reqwest
+  supportAsync: true
+  supportMiddleware: true
+  supportMultipleResponses: true
+  useSingleRequestParameter: true

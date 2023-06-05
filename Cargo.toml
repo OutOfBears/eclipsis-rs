@@ -1,0 +1,23 @@
+[package]
+name = "eclipsis-rs"
+version = "3.0.0"
+authors = ["OpenAPI Generator team and contributors"]
+description = "Public APIs for use within whatever you want. These are ratelimited, so try to keep requests to a minimum.  Future use of the API will require an API key.  ## API Keys API keys need to be passed alongside every request. With an API key, you are also expected to adhere to the following guidelines:   - Do not share your API key.   - Data can be retained for a maximum of 30 days (this is to adhere with GDPR guidelines).  API keys can also be saved to the browser for convenience using the client login/logout APIs.  You can obtain an API key by asking staff in the [Eclipsis discord](https://discord.gg/AkDsUtz). "
+# Override this license by providing a License Object in the OpenAPI.
+license = "Unlicense"
+edition = "2018"
+
+[dependencies]
+serde = "^1.0"
+serde_derive = "^1.0"
+serde_json = "^1.0"
+url = "^2.2"
+uuid = { version = "^1.0", features = ["serde"] }
+reqwest-middleware = "0.2.0"
+
+[dependencies.reqwest]
+version = "^0.11"
+features = ["json", "multipart"]
+
+[dev-dependencies]
+tokio = { version = "^1.0", features = ["full"] }
